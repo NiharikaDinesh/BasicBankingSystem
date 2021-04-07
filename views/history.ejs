@@ -1,0 +1,201 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harmony</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon1/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon1/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon1/favicon-16x16.png">
+<link rel="manifest" href="favicon1/site.webmanifest">
+    <link rel="stylesheet" type="text/css"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/d7d7ee6600.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:ital,wght@0,300;0,400;1,600&family=Langar&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+<style>
+
+.navbar {
+  margin-bottom: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.white{
+  color: white;
+}
+
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none;
+}
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+table{
+  width: 50%;
+}
+
+tbody{
+  font-size: 0.75em;
+}
+    body {
+      margin-top: 0px;
+     margin-bottom: 50px;
+     margin-right: 50px;
+     margin-left: 50px;
+     height: 100%;
+ background: linear-gradient(180deg, #39363a 0%, #c2bfbe 35%, #fafffe 100%);
+
+     
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
+
+      .ml15 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  /* letter-spacing: 0.1em; */
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class = "navbar-brand" src="images/logo.png" alt="logo" style="height: 10%;">
+          <h3 style="color: white;font-size: 2em;  font-family: 'Josefin Sans', sans-serif; 
+      ">HARMONY</h3>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li ><a href="/">HOME</a></li>
+            <li ><a href="/">ABOUT</a></li>
+            <li><a href="/view">VIEW</a></li>
+            <li ><a href="/money-transfer">TRANSFER</a></li>
+            <li class="active"><a href="/history">TRANSACTION HISTORY</a></li>
+            <li><a href="#footer">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="ml15">
+      <span class="word">TRANSACTION</span>
+      <span class="word">HISTORY</span>
+      
+    </h1>
+
+<div class="pt-4 pb-4 pl-4 pr-4">
+  <span class="border border-5">
+    <table class="table white" style = "background-color: #777;">
+      <thead>
+        <tr>
+          <th scope="col">Sender's Name</th>
+          <th scope="col">Receiver's Name</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <%  data.forEach(function(item){ %>
+        <tbody>
+          <tr>
+            <td><%=  item.senderName  %> </td>
+            <td> <%=  item.receiverName  %> </td>
+            <td> <%=  item.money  %> </td>
+           </tr>
+          </tbody>
+      <%  })  %>
+
+
+    </table>
+    </span>
+   </div>
+<br>
+<br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script type="text/javascript">
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+</script>
+
+
+  </body>
+  <footer id="footer" style="background-color:#39363a;">
+    <div class="row">
+      <div class="row">
+        <div class="column">
+          <h5>Address</h5>
+          <p>D.No 9-2-11<br>ABC Street<br>NY 400213</p>
+        </div>
+        <div class="column">
+          <h5>Working Hours</h5>
+          <p>Monday to Friday : 10am to 6pm<br>
+            Saturday : 10am to 2pm</p>
+        </div>
+        <div class="column">
+          <h5>Phone Numbers</h5>
+          <p>+91 9632587410<br>+91 1236547890<br>+91 7896321450</p>
+        </div>
+        <div class="column">
+          <h5>Email</h5>
+          <p>harmony@gmail.com</p>
+        </div>
+      </div>
+      </div>
+  
+  
+    <hr>
+  
+    <p id="copyright">&copy; All Rights Reserved</p>
+    <div class="icons">
+      <ul style="display:inline-flex;">
+        <li><i class="fa fa-facebook-f"></i></li>
+        <li> <i class="fa fa-twitter"></i></li>
+        <li> <i class="fa fa-instagram"></i></li>
+  
+  
+      </ul>
+  
+    </div>
+  </footer>
+</html>

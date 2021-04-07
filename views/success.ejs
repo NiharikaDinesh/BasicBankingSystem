@@ -1,0 +1,136 @@
+<html>
+<head>
+  <title>Harmony</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon1/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon1/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon1/favicon-16x16.png">
+<link rel="manifest" href="favicon1/site.webmanifest">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css"
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/d7d7ee6600.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:ital,wght@0,300;0,400;1,600&family=Langar&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+<style>
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none;
+}
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://mcdn.wallpapersafari.com/medium/95/3/6d8JjI.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(5px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.succ:hover{
+  color: #f1f1f1;
+}
+
+</style>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img class = "navbar-brand" src="images/logo.png" alt="logo" style="height: 10%;">
+        <h3 style="color: white;font-size: 2em;  font-family: 'Josefin Sans', sans-serif; 
+        ">HARMONY</h3>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><a href="/">HOME</a></li>
+          <li ><a href="/">ABOUT</a></li>
+          <li><a href="/view">VIEW</a></li>
+          <li ><a href="/money-transfer">TRANSFER</a></li>
+          <li class="active"><a href="/history">TRANSACTION HISTORY</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>Money transfered Successfully from <%= sender%>'s account to <%=receiver%></h2>
+  <h1 style="font-size:50px"></h1>
+  <a class="succ" href="/view" style="text-decoration: none;"> Click here to check account Balance</a>
+</div>
+
+</body>
+</html>

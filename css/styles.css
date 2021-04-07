@@ -1,0 +1,171 @@
+body {
+  margin-top: 0px;
+ margin-bottom: 50px;
+ margin-right: 50px;
+ margin-left: 50px;
+ height: 100%;
+ background: linear-gradient(180deg, #5b555e 0%, #94918f 35%, #404745 100%);
+ background-size: cover;
+}
+  /* Remove the navbar's default margin-bottom and rounded borders */
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 0 0 1rem;
+  }
+  #myNavbar{
+      padding: 0 18px;
+      font-size: 1.2em;
+    }
+    .navbar-brand{
+      height: 20%;
+      width: 20%;
+    }
+
+
+   
+  /* Add a gray background color and some padding to the footer */
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+
+
+* {
+box-sizing: border-box;
+}
+
+body, html {
+height: 100%;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+/* color: white; */
+}
+
+* {
+box-sizing: border-box;
+}
+
+
+
+h1{
+  font-size: 5em;
+}
+
+#service{
+margin-top: 20px;
+margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+.services-area {
+  padding-top: 75px;
+  padding-bottom: 20px; } }
+
+.single-services {
+padding: 20px 30px;
+background-color: #293c46;
+-webkit-transition: all 0.4s ease-out 0s;
+-moz-transition: all 0.4s ease-out 0s;
+-ms-transition: all 0.4s ease-out 0s;
+-o-transition: all 0.4s ease-out 0s;
+transition: all 0.4s ease-out 0s; }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .single-services {
+    padding: 30px 10px; } }
+@media (max-width: 767px) {
+  .single-services {
+    padding: 30px 10px; } }
+.single-services .services-icon i {
+  font-size: 52px;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+.single-services .services-content .services-title {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Barlow', sans-serif;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+.single-services:hover {
+  background-color: #293c46; }
+  .single-services:hover .services-icon i {
+    color: #fff; }
+  .single-services:hover .services-content .services-title,
+  .single-services:hover .services-content p {
+    color: #fff; }
+
+    .col{
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    footer{
+margin-top: 60px;
+/* padding-left:7%;
+padding-right:7%; */
+background-color: black;
+min-width:500px;
+
+}
+footer h5, footer p{
+color:white;
+}
+footer h5{
+font-size: 15px;
+padding-top:20px;
+
+}
+footer p{
+font-size:13px;
+
+}
+footer .column {
+
+float: left;
+width: 24%;
+text-align:center;
+float:left;
+height: auto;
+padding-left:1%;
+padding-right:1%;
+
+
+}
+footer .row{
+width:91vw;
+}
+footer .row::after{
+padding:2px;
+
+}
+
+footer .icons{
+color:white;
+text-align:center;
+}
+
+footer .icons ul li{
+list-style-type:none;
+padding:8px 8px;
+font-size:30px;
+}
+
+footer #copyright{
+text-align:center;
+}
